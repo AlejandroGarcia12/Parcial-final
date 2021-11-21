@@ -1,8 +1,0 @@
-clc
-clear all 
-syms x
-f= @(x) exp(x)-x*sin(x);
-x0=2;
-n=5;
-[x,t]=newton(f, x0, n);
-tabla=array2table(t,'VariableNames',{'s', 'x0',  'f(x0)',  'f'(x0)', 'xx'})
